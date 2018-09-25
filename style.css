@@ -78,7 +78,7 @@ select {
 
 input:focus {
 	outline: none;
-	border: 1px solid #fef;
+	border: 1px solid #e2e2e2;
 }
 
 select:focus {
@@ -87,7 +87,7 @@ select:focus {
 }
 
 input:hover, textarea:hover, select:hover {
-	border: 1px solid #fef;
+	border: 1px solid #e2e2e2;
 }
 
 .btn-submit {

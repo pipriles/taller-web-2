@@ -2,19 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Taller 2</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-	<h2>  </h2>
+	<!--[if IE]>
+		<h1>Don't use Internet Explorer!</h1>
+	<![endif]-->
 
-	<span>Titulo</span>
-	<span>Descripcion</span>
-	<span>Ubicacion</span>
+	<div class="container">
+		<div class="card-form">
 
-	<!-- Alquiler o venta -->
-	<span>Precio</span>
-	
+			<h2 title="Esperabas algo mas?">Agregar Propiedad</h2>
+			<div class="card-container">
+
+				<div class="card-column">
+
+					<div>
+						<label for="name">Titulo</label>
+						<input type="text" name="title" placeholder="Titulo de la propiedad" value="">
+					</div>
+
+					<div>
+						<label for="description">Descripcion</label>
+						<input type="text" name="description" placeholder="Descripcion de la propiedad" value="">
+					</div>
+
+					<div>
+						<label for="price">Precio</label>
+						<input type="number" name="price" placeholder: "Precio en dolares" value="">
+					</div>
+
+					<div>
+						<label for="type">Tipo</label>
+						<select>
+							<option value="" selected>Seleccione tipo de propiedad</option>
+							<option value="sale">Venta</option>
+							<option value="rent">Alquiler</option>
+						</select>
+
+					</div>
+
+				</div>
+
+				<div class="card-column">
+
+					<!-- Google Maps ? -->
+					<div>
+						<label for="title">Ciudad</label>
+						<input type="text" name="city" placeholder="Valencia" value="">
+					</div>
+
+					<div>
+						<label for="state">Estado</label>
+						<input type="text" name="state" placeholder="Carabobo" value="">
+					</div>
+
+
+					<div>
+						<label for="addr">Direccion</label>
+						<input type="text" name="addr" placeholder="Urb. Prebo, Calle 666" value="">
+					</div>
+
+					<!-- Alquiler o venta -->
+
+					<div>
+						<input title="Que estas esperando?" class="btn-submit" type="submit" value="Agregar" name="submit" id="submit" />
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>
 

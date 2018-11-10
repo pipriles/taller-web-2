@@ -1,5 +1,5 @@
-# Taller 2
+# Proyecto
 
-Vista de creacion de productos para el taller 2 de aplicaciones web.
+Proyecto de aplicaciones Web...
 
-[Pagina Web](https://pipriles.github.io/taller-web-2)
+[Pagina Web](https://pipriles.github.io/web-app-project)

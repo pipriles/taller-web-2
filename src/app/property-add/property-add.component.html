@@ -1,0 +1,64 @@
+<div class="container">
+	<div class="card-form">
+		<h2 title="Esperabas algo mas?">Agregar Propiedad</h2>
+		<form (ngSubmit)="addProperty()" #propForm="ngForm" class="creation-form"> 
+
+			<div fxLayout="row" fxLayout.lt-sm="column"fxLayoutGap="20px">
+				<div fxFlex="50%">
+					<mat-form-field class="full-field">
+						<input type="text" name="title" [(ngModel)]="model.title" matInput placeholder="Titulo">
+					</mat-form-field>
+
+					<mat-form-field class="full-field">
+						<textarea name="description" [(ngModel)]="model.description" matInput placeholder="Descripcion"></textarea>
+					</mat-form-field>
+
+					<mat-form-field class="full-field">
+						<input type="number" name="price" [(ngModel)]="model.price" matInput placeholder="Precio">
+					</mat-form-field>
+
+					<mat-form-field class="full-field">
+						<input type="text" name="phone" [(ngModel)]="model.contact.phone" matInput placeholder="Telefono">
+					</mat-form-field>
+
+
+					<mat-form-field class="full-field">
+						<input type="text" name="email" [(ngModel)]="model.contact.email" matInput placeholder="Correo">
+					</mat-form-field>
+				</div>
+
+				<div fxFlex="50%">
+
+					<mat-form-field class="full-field">
+						<input type="text" name="city" [(ngModel)]="model.address.city" matInput placeholder="Ciudad">
+					</mat-form-field>
+
+					<mat-form-field class="full-field">
+						<input type="text" name="state" [(ngModel)]="model.address.state" matInput placeholder="Estado">
+					</mat-form-field>
+
+					<mat-form-field class="full-field">
+						<input type="text" name="postalCode" [(ngModel)]="model.address.postalCode" matInput #postalCode maxlength="5" placeholder="Codigo Postal" value="">
+						<mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+					</mat-form-field>
+
+
+					<mat-form-field class="full-field">
+						<mat-select name="type" [(ngModel)]="model.type" placeholder="Tipo" disableRipple>
+							<mat-option value="sale">Venta</mat-option>
+							<mat-option value="rent">Alquiler</mat-option>
+						</mat-select>
+					</mat-form-field>
+
+					<mat-divider></mat-divider>
+
+					<button type="submit" class="add-button" mat-stroked-button>Agregar</button>
+
+				</div>
+			</div>
+
+		</form>
+	</div>
+</div>
+
+

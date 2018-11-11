@@ -1,0 +1,27 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+	height: 56px;
+}
+
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+	z-index: 2;
+}
+
+.toolbar-placeholder {
+	height: 56px;
+	width: 100%;
+}
+
+.sidenav-icon {
+	padding-right: 10px;
+}
+
+.sidenav {
+  padding: 20px 10px;
+}
+
+.sidenav-container {
+	background-color: #e8e8e8;
+}

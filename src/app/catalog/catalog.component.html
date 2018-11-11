@@ -1,0 +1,6 @@
+<div class="container" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around">
+	<app-properties class="container-item" (selected)="onSelect($event)">
+	</app-properties>
+	<app-details class="container-item" [property]="current">
+	</app-details>
+</div>

@@ -1,0 +1,36 @@
+<mat-toolbar style="height: 56px" class="fixed-toolbar">
+	<button mat-icon-button (click)="drawer.toggle()">
+		<mat-icon>menu</mat-icon>
+	</button>
+	<span>Proyecto</span>
+	<span class="toolbar-spacer"></span>
+	<mat-icon class="toolbar-icon">verified_user</mat-icon>
+</mat-toolbar>
+<div class="toolbar-placeholder"></div>
+
+<mat-sidenav-container style="background-color: #e8e8e8" autosize>
+
+	<mat-sidenav #drawer class="sidenav" mode="side" [fixedInViewport]="true" fixedTopGap="56">
+
+		<!-- Que mas podria agregar de interesante? -->
+
+		<mat-nav-list>
+
+			<mat-list-item routerLink="/properties">
+				<mat-icon class="sidenav-icon">list</mat-icon>
+				Mostrar propiedades
+			</mat-list-item>
+
+			<mat-list-item routerLink="/create">
+				<mat-icon class="sidenav-icon">add</mat-icon>
+				Agregar propiedad
+			</mat-list-item>
+
+		</mat-nav-list>
+
+	</mat-sidenav>
+
+	<router-outlet></router-outlet>
+	<!-- <img width="800" alt="Angular Logo" [src]="/assets/moderne.jpg"> -->
+
+</mat-sidenav-container>

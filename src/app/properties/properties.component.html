@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutGap="20px" *ngFor="let p of props"> 
+
+	<div class="card-box"
+		(click)="selectProperty(p)">
+
+		<div class="card-image"></div>
+		<div class="card-info">
+
+			<h2>{{ p.title }}</h2>
+			<span class="header-spacer"></span>
+			<span>{{ p.price | currency }}</span>
+			<!-- Colocar disponibilidad aqui -->
+
+			<p>{{ p.description }}</p>
+			<!-- Limitar a N caracteres -->
+		</div>
+
+	</div>
+
+</div>
+

@@ -1,0 +1,44 @@
+.header-spacer {
+  flex: 1 1 auto;
+}
+
+.card-box {
+	display: flex;
+	height: 220px;
+	width: 520px;
+	background-color: #fff;
+}
+
+.card-image {
+	width: 250px;
+	height: 220px;
+	background-image: url("/assets/moderne.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.card-info {
+	padding: 10px;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.card-box {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.card-image {
+		width: 100%;
+	}
+
+}
+

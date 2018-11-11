@@ -1,0 +1,12 @@
+.container {
+	padding: 20px;
+	background-color: #e8e8e8;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+	.container-item {
+		min-width: 300px;
+	}
+}
+

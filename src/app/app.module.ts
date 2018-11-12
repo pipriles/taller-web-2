@@ -29,7 +29,8 @@ import { CatalogComponent } from './catalog/catalog.component';
 const appRoutes: Routes = [
 	{ path: 'create',     component: PropertyAddComponent },
 	{ path: 'properties', component: CatalogComponent },
-	{ path: '', redirectTo: '/properties', pathMatch: 'full' }
+	{ path: '', redirectTo: '/properties', pathMatch: 'full' },
+	{ path: '**', redirectTo: '/properties' }
 ];
 
 @NgModule({

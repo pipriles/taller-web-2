@@ -1,6 +1,6 @@
 # Proyecto de Web
 
-[Pagina Web](https://pipriles.github.io/web-app-project/web-app-project/properties)
+[Pagina Web](https://pipriles.github.io/web-app-project)
 
 ---
 

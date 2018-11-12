@@ -6,11 +6,11 @@
 			<div fxLayout="row" fxLayout.lt-sm="column"fxLayoutGap="20px">
 				<div fxFlex="50%">
 					<mat-form-field class="full-field">
-						<input type="text" name="title" [(ngModel)]="model.title" matInput placeholder="Titulo">
+						<input type="text" name="title" [(ngModel)]="model.title" matInput placeholder="Título">
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<textarea name="description" [(ngModel)]="model.description" matInput placeholder="Descripcion"></textarea>
+						<textarea name="description" [(ngModel)]="model.description" matInput placeholder="Descripción"></textarea>
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
@@ -18,7 +18,7 @@
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<input type="text" name="phone" [(ngModel)]="model.contact.phone" matInput placeholder="Telefono">
+						<input type="text" name="phone" [(ngModel)]="model.contact.phone" matInput placeholder="Teléfono">
 					</mat-form-field>
 
 
@@ -38,7 +38,7 @@
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<input type="text" name="postalCode" [(ngModel)]="model.address.postalCode" matInput #postalCode maxlength="5" placeholder="Codigo Postal" value="">
+						<input type="text" name="postalCode" [(ngModel)]="model.address.postalCode" matInput #postalCode maxlength="5" placeholder="Código Postal" value="">
 						<mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
 					</mat-form-field>
 

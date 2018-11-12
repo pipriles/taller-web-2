@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PropertyService } from '../property.service'
+import { PropertyService, Property } from '../property.service'
 
 @Component({
 	selector: 'app-details',
@@ -8,8 +8,8 @@ import { PropertyService } from '../property.service'
 })
 export class DetailsComponent implements OnInit {
 
-	private _show: boolean;
-	private _prop: object;
+	public _show: boolean;
+	public _prop: Property;
 	constructor(private propService: PropertyService) {}
 
 	get property() {
@@ -17,7 +17,7 @@ export class DetailsComponent implements OnInit {
 	}
 
 	@Input()
-	set property(prop: object) {
+	set property(prop: Property) {
 		if ( !prop ) {
 			this._prop = this.propService.defaultProperty();
 			this._show = false;

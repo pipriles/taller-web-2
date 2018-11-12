@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
-import { PROPERTIES } from './properties'
+import { Property, PROPERTIES } from './properties'
+export * from './properties';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class PropertyService {
 
-	private props: object[];
+	private props: Property[];
 
 	constructor() {
 		this.props = PROPERTIES;
 	}
 
-	getProperties(): object[] {
+	getProperties(): Property[] {
 		return this.props;
 	}
 
-	addProperty(prop: object) {
+	addProperty(prop: Property) {
 		this.props.push(prop);
 	}
 

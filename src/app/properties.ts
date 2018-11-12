@@ -1,4 +1,16 @@
-export const PROPERTIES: object[] = [
+export class Property {
+	title: string;
+	description: string;
+	location: any;
+	address: any;
+	contact: any;
+	type: string;
+	available: boolean;
+	price: number | string;
+	images: string[];
+};
+
+export const PROPERTIES: Property[] = [
 	{
 		"title": "Qta Casablanca",
 		"description": "Hermosa casa junto al rio",

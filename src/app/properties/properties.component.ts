@@ -10,7 +10,7 @@ export class PropertiesComponent implements OnInit {
 
 	@Output() selected = new EventEmitter<object>();
 
-	private props: object[];
+	public props: object[];
 
 	constructor(private propService: PropertyService) { 
 		this.props = [];

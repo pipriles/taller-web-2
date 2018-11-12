@@ -8,12 +8,5 @@ from '@angular/common';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
 	constructor(private location: Location) {}
-
-	changeUrl(path) {
-		this.location.go(path);
-		this.location.forward();
-	}
-
 }

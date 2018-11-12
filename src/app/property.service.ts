@@ -42,7 +42,7 @@ export class PropertyService {
 			"type": "",
 			"available": false,
 			"price": null,
-			"images": []
+			"images": [ "http://lorempixel.com/grey/1920/1080/city/" ]
 		}
 	}
 

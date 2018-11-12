@@ -18,6 +18,17 @@ export class PropertyAddComponent implements OnInit {
 
 	addProperty() {
 		console.log('Property added!', this.model);
+
+		if (!this.model.title) return
+		if (!this.model.description) return
+		if (!this.model.price) return
+		if (!this.model.contact.phone) return
+		if (!this.model.contact.email) return
+		if (!this.model.address.city) return
+		if (!this.model.address.state) return
+		if (!this.model.address.pos) return
+		if (!this.model.title) return
+		
 		this.propService.addProperty(this.model)
 	}
 }

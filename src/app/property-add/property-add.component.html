@@ -6,7 +6,7 @@
 			<div fxLayout="row" fxLayout.lt-sm="column"fxLayoutGap="20px">
 				<div fxFlex="50%">
 					<mat-form-field class="full-field">
-						<input type="text" name="title" [(ngModel)]="model.title" matInput placeholder="Título">
+						<input type="text" name="title" [(ngModel)]="model.title" matInput placeholder="Título" required required>
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
@@ -14,31 +14,31 @@
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<input type="number" name="price" [(ngModel)]="model.price" matInput placeholder="Precio">
+						<input type="number" name="price" [(ngModel)]="model.price" matInput placeholder="Precio" required>
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<input type="text" name="phone" [(ngModel)]="model.contact.phone" matInput placeholder="Teléfono">
+						<input type="text" name="phone" [(ngModel)]="model.contact.phone" matInput placeholder="Teléfono" required>
 					</mat-form-field>
 
 
 					<mat-form-field class="full-field">
-						<input type="text" name="email" [(ngModel)]="model.contact.email" matInput placeholder="Correo">
+						<input type="text" name="email" [(ngModel)]="model.contact.email" matInput placeholder="Correo" required>
 					</mat-form-field>
 				</div>
 
 				<div fxFlex="50%">
 
 					<mat-form-field class="full-field">
-						<input type="text" name="city" [(ngModel)]="model.address.city" matInput placeholder="Ciudad">
+						<input type="text" name="city" [(ngModel)]="model.address.city" matInput placeholder="Ciudad" required>
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<input type="text" name="state" [(ngModel)]="model.address.state" matInput placeholder="Estado">
+						<input type="text" name="state" [(ngModel)]="model.address.state" matInput placeholder="Estado" required>
 					</mat-form-field>
 
 					<mat-form-field class="full-field">
-						<input type="text" name="postalCode" [(ngModel)]="model.address.postalCode" matInput #postalCode maxlength="5" placeholder="Código Postal" value="">
+						<input type="text" name="postalCode" [(ngModel)]="model.address.postalCode" matInput #postalCode maxlength="5" placeholder="Código Postal" value="" required>
 						<mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
 					</mat-form-field>
 

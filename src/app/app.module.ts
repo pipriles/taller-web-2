@@ -64,7 +64,7 @@ const appRoutes: Routes = [
 		MatSelectModule,
 
 		/* Angular Gallery */
-		GalleryModule
+		GalleryModule.forRoot()
 	],
 	providers: [],
 	bootstrap: [AppComponent]

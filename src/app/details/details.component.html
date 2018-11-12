@@ -1,7 +1,7 @@
-<mat-card style="max-width: 400px">
+<mat-card *ngIf="_show" style="max-width: 400px">
 
 	<!-- Colocar imagenes aqui -->
-	<img mat-card-image src="/assets/moderne.jpg" alt="Photo" />
+	<img mat-card-image [src]="firstImg()" alt="Photo" />
 
 	<mat-card-header>
 		<mat-card-title>{{ _prop.title }}</mat-card-title>

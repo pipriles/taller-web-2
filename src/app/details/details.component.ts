@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { PropertyService, Property } from '../property.service'
+import { GalleryItem, ImageItem } from '@ngx-gallery/core';
 
 @Component({
 	selector: 'app-details',
@@ -31,6 +32,15 @@ export class DetailsComponent implements OnInit {
 	ngOnInit() {
 		this._prop = this.propService.defaultProperty();
 		this._show = false;
+	}
+
+	imgItems() : GalleryItem[] {
+		if ( !this._prop.images ) return [];
+		return [];
+	}
+
+	firstImg() {
+		return this._prop.images ? this._prop.images[0] : '';
 	}
 
 }

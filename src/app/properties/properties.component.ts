@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { PropertyService } from '../property.service'
+import { PropertyService, Property } from '../property.service'
 
 @Component({
 	selector: 'app-properties',
@@ -10,7 +10,7 @@ export class PropertiesComponent implements OnInit {
 
 	@Output() selected = new EventEmitter<object>();
 
-	public props: object[];
+	public props: Property[];
 
 	constructor(private propService: PropertyService) { 
 		this.props = [];
@@ -20,9 +20,16 @@ export class PropertiesComponent implements OnInit {
 		this.props = this.propService.getProperties();
 	}
 
-	selectProperty(prop: object) {
+	selectProperty(prop: Property) {
 		console.log(prop);
 		this.selected.emit(prop);
+	}
+
+	firstImageUrl(prop: Property) {
+		let imageUrl = prop.images.length > 0 
+			? prop.images[0] 
+			: "/assets/moderne.jpg";
+		return { 'background-image': `url("${imageUrl}")` };
 	}
 
 }
